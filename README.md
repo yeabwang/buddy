@@ -1,6 +1,6 @@
 # Buddy - AI Coding Assistant
 
-Buddy is a powerful CLI tool that leverages Groq's LLMs to help you write, explain, and refactor code directly from your terminal.
+Buddy is a CLI tool that leverages Groq's LLMs to help you write, explain, and refactor code directly from your terminal.
 
 ## Installation
 
