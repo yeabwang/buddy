@@ -15,6 +15,12 @@ def save_api_key(api_key):
 
 def get_api_key():
     """Retrieves the API key from the environment or .env file."""
-    # load_dotenv will look for a .env file in the current directory or parents
-    load_dotenv()
+    # Explicitly look in the current directory first
+    env_path = Path(".env")
+    if env_path.exists():
+        load_dotenv(dotenv_path=env_path, override=True)
+    else:
+        # Fallback to searching parent directories
+        load_dotenv()
+        
     return os.getenv('GROQ_API_KEY')

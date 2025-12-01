@@ -43,7 +43,7 @@ def config(key):
         except subprocess.CalledProcessError:
             click.echo("❌ Error installing dependencies.", err=True)
     else:
-        click.echo("\nℹ️ No requirements.txt found. Skipping dependency installation.")
+        click.echo("\nℹ️ No requirements.txt found in current directory. Skipping dependency installation.")
     
     click.echo("\n----------------------------------")
 

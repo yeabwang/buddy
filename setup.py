@@ -6,13 +6,14 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='buddy-ai-cli',
-    version='0.1.0',
+    version='0.1.1',
     description='Your AI Coding Assistant CLI',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Yeab Wang',
     url='https://github.com/yeabwang/buddy',
     packages=find_packages(),
+    include_package_data=True,
     install_requires=[
         'groq',
         'python-dotenv',
